@@ -2,6 +2,7 @@
   "name": "gasc",
   "version": "1.0.0",
   "description": "Generate an Angular component from a SVG file",
+  "prepublishOnly": "build",
   "main": "./dist/index.js",
   "bin": {
     "gasc": "./dist/index.js"

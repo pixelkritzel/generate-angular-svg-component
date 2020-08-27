@@ -30,11 +30,6 @@ export async function writeComponent(
     compiled.componentContent,
     { encoding: 'utf-8' }
   );
-  await fs.writeFile(
-    `${componentDirectory}/${compiled.componentFileName}`,
-    compiled.componentContent,
-    { encoding: 'utf-8' }
-  );
   await fs.writeFile(`${componentDirectory}/${compiled.svgFileName}`, compiled.svgContent, {
     encoding: 'utf-8',
   });
